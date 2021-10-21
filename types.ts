@@ -12,10 +12,8 @@ export type Session = {
     itemId: string;
     listKey: string;
     data: {
-        name: string;
         role?: {
             id: string;
-            name: string;
         } & {
             [key in Permission]: boolean;
         };
